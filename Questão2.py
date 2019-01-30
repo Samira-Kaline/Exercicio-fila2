@@ -17,10 +17,13 @@ class Fila_impressao:
       print(self.fila[0])
       print('Impresso')
       self.fila.pop(0)
-
-Impressora = Fila_impressao()
-Impressora.requisicao('Carlos')
-Impressora.requisicao('Isaque')
-Impressora.requisicao('Kelly Ki')
-numero = random.randint(1,10)
-Impressora.impressao(numero)
+def main():
+  Impressora = Fila_impressao()
+  Impressora.requisicao('Carlos')
+  Impressora.requisicao('Isaque')
+  Impressora.requisicao('Kelly Ki')
+  numero = random.randint(1,10)
+  Impressora.impressao(numero)
+ 
+if(__name__=="__main__"):
+  main()
